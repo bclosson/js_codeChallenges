@@ -12,7 +12,9 @@ Examples:
 sayHello() //=> Hello!
 -----------------------------------------------------------------*/
 // Your solution for 00-sayHello (example) here:
-
+const sayHello = () => {
+  return "Hello!";
+}
 
 
 /*-----------------------------------------------------------------
@@ -31,6 +33,9 @@ addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
 
+const addOne = (num) => {
+  return num + 1;
+}
 
 
 
