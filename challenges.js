@@ -13,9 +13,6 @@ sayHello() //=> Hello!
 -----------------------------------------------------------------*/
 // Your solution for 00-sayHello (example) here:
 
-function sayHello() {
-  return 'Hello!'
-}
 
 
 /*-----------------------------------------------------------------
@@ -33,9 +30,6 @@ addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
-function addOne(num) {
-  return num + 1;
-}
 
 
 
@@ -58,9 +52,7 @@ addTwoNumbers(0, 0) //=> 0
 addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
-function addTwoNumbers(a, b) {
-  return a + b;
-}
+
 
 
 
@@ -83,9 +75,7 @@ sumNumbers([2, 10, -5]) //=> 7
 sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
-function sumNumbers(arrayOfNums) {
-  return arrayOfNums.reduce((sum, currentNum) => sum + currentNum, 0);
-}
+
 
 /*-----------------------------------------------------------------
 Challenge: 04-addList
@@ -105,9 +95,7 @@ add(1,50,1.23) //=> 52.23
 add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
-function addList() {
-  return [...arguments].reduce((sum, arg) => sum + arg, 0);
-}
+
 
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
@@ -128,11 +116,6 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
-function computeRemaider(a, b) {
-  if (b === 0) return Infinity;
-
-  return a % b;
-}
 
 
 
@@ -155,14 +138,7 @@ range(1,1) //=> []
 range(5,2) //=> "First argument must be less than second"
 -----------------------------------------------------------------*/
 // Your solution for 06-range here:
-function range(a, b) {
-  if (a >= b) return 'First argument must be less than second.';
 
-  const result = [];
-  for (let i = a; i < b; i++) result.push(i);
-
-  return result;
-}
 
 /*-----------------------------------------------------------------
 Challenge: 07-reverseUpcaseString
@@ -179,12 +155,7 @@ reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES"
 -----------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
 
-function reverseUpcaseString(string) {
-  return string.toUpperCase()
-    .split('')
-    .reverse()
-    .join('');
-}
+
 
 /*-----------------------------------------------------------------
 Challenge: 08-removeEnds
@@ -203,9 +174,7 @@ removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
 
-function removeEnds(string) {
-  return string.slice(1, string.length - 1);
-}
+
 
 /*-----------------------------------------------------------------
 Challenge: 09-charCount
