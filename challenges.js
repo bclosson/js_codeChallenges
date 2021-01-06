@@ -58,7 +58,9 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
-
+const addTwoNumbers = (n1, n2) => {
+  return n1 + n2;
+}
 
 
 
