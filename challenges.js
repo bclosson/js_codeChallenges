@@ -186,7 +186,9 @@ Examples:
 reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES" 
 -----------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
-
+const reverseUpcaseString = (arg) => {
+  return arg.split('').reverse().join('').toUpperCase();
+}
 
 
 /*-----------------------------------------------------------------
