@@ -111,7 +111,9 @@ add(1,50,1.23) //=> 52.23
 add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
-
+const addList = (...nums) => {
+    return nums.reduce((sum, num) => sum + num, 0);
+}
 
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
@@ -132,8 +134,13 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
-
-
+const computeRemainder = (a, b) => {
+  if (b === 0) {
+    return Infinity;
+  } else {
+  return a % b;
+  }
+}
 
 
 /*-----------------------------------------------------------------
