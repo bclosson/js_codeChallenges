@@ -240,8 +240,6 @@ function charCount(str) {
 }
 
 
-
-
 /*-----------------------------------------------------------------
 Challenge: 10-formatWithPadding
 
@@ -263,7 +261,13 @@ formatWithPadding(42, '*', 10); //=> "********42"
 formatWithPadding(1234, '*', 3); //=> "1234"
 -----------------------------------------------------------------*/
 // Your solution for 10-formatWithPadding here:
-
+function formatWithPadding(num, str, len) {
+  let res = num.toFixed(0);
+  while(res.length < len) {
+    res = str + res;
+  }
+  return res;
+}
 
 
 
