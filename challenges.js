@@ -293,6 +293,15 @@ isPalindrome(''); //=> true
 -----------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
 
+const isPalindrome = (str) => {
+  let str = str.toLowerCase();
+  let revStr = str.split('').reverse().join('');
+  if (str.length === 0 || str.length === 1) {
+    return true;
+  } if (str !== revStr) {
+      return false;
+    }
+}
 
 
 
